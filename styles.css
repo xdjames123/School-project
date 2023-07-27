@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+}
+
+nav {
+  background-color: crimson;
+  color: #fff;
+  padding: 10px 0;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 3vw;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(245, 245, 255);
+  position: relative;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: -2px;
+  transition: 0.5s;
+}
+
+a:hover:after {
+  width: 100%;
+}
+
+h1 a {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(30deg, #ffff00, #90EE90, #00bfff, #ff4c68, #ef8172);
+  background-size: 400%;
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  font-size: 5vw;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: Text-animation 18s linear infinite;
+}
+
+@keyframes Text-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+h2 a {
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  top: -1vh;
+  color: #000;
+  font-size: 3.5vw;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  background-color: #fff;
+  padding: 180px;
+  margin: 10px;
+  font-size: x-large;
+}
+
+h3 a {
+  font-family: 'Quicksand', sans-serif;
+  color: #000;
+  font-size: 3.5vw;
+}
+
+h4 a {
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  top: 13.5vh;
+  color: #000;
+  font-size: 5vw;
+}
+
+img {
+  width: 80vh;
+  border-radius: 10px;
+  position: relative;
+  bottom: -14px;
+  left: -350px;
+}
+
+.Piano img {
+  position: relative;
+  bottom: 305px;
+  left: 350px;
+}
+
+h5 a {
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  top: 8vh;
+  color: #000;
+  font-size: 3vw;
+}
+
+.PL img {
+  position: relative;
+  bottom: -80px;
+  left: 530px;
+  width: 7vw;
+}
+
+.PL p {
+  font-size: 2vw;
+  position: relative;
+  bottom: -100px;
+}
+
+footer {
+  font-family: 'Quicksand' ,sans-serif;
+  font-size: 1.8vw;
+  background: crimson;
+  position: relative;
+  bottom: -160px;
+  height: 50vh;
+}
+
+@media (min-width: 1370px) {
+  .Piano img {
+    position: relative;
+    bottom: 448px;
+    left: 450px;
+  }
+
+  .PL img {
+    position: relative;
+    bottom: -80px;
+    left: 750px;
+    width: 7vw;
+  }
+}
